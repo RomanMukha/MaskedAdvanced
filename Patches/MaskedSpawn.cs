@@ -19,7 +19,7 @@ public class MaskedSpawn
         {
             logger.LogInfo("Starting BeginEnemySpawning");
 
-            SpawnableEnemyWithRarity maskedEnemy = MaskedAdvanceMain.MaskedEnemy;
+            SpawnableEnemyWithRarity maskedEnemy = Plugin.MaskedEnemy;
             
             maskedEnemy.enemyType.PowerLevel = 1;
             
@@ -28,9 +28,9 @@ public class MaskedSpawn
             logger.LogInfo($"Masked Rarity: {maskedEnemy.enemyType.probabilityCurve}");
             //maskedEnemy.enemyType.probabilityCurve = flowerman.enemyType.probabilityCurve;
 
-            maskedEnemy.rarity = MaskedAdvanceMain.SpawnRate > 1000000
+            maskedEnemy.rarity = Plugin.SpawnRate > 1000000
                 ? 1000000
-                : MaskedAdvanceMain.SpawnRate;
+                : Plugin.SpawnRate;
 
             maskedEnemy.enemyType.MaxCount = 50;
             maskedEnemy.enemyType.isOutsideEnemy = true;

@@ -19,7 +19,7 @@ internal class FindMaskedPrefab
                 if (enemy.enemyType.enemyName != "Masked") continue;
                     
                 logger.LogInfo("Found masked enemy prefab, saving it");
-                MaskedAdvanceMain.MaskedEnemy = enemy;
+                Plugin.MaskedEnemy = enemy;
             }
         }
     }

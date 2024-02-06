@@ -7,10 +7,10 @@ using MaskedAdvanced.Patches;
 namespace MaskedAdvanced
 {
     [BepInPlugin(PluginInfo.Meta.Guid, PluginInfo.Meta.Name, PluginInfo.Meta.Version)]
-    public class MaskedAdvanceMain : BaseUnityPlugin
+    public class Plugin : BaseUnityPlugin
     {
         private readonly Harmony HarmonyInstance = new(PluginInfo.Meta.Guid);
-        internal static MaskedAdvanceMain ThisInstance;
+        internal static Plugin ThisInstance;
         internal static ManualLogSource LogSource;
         
         private ConfigEntry<int> SpawnRateConfig;
@@ -31,7 +31,7 @@ namespace MaskedAdvanced
             LogSource = BepInEx.Logging.Logger.CreateLogSource(PluginInfo.Meta.Guid);
             LogSource.LogInfo($"{PluginInfo.Meta.Name} mod is loading");
             
-            HarmonyInstance.PatchAll(typeof(MaskedAdvanceMain));
+            HarmonyInstance.PatchAll(typeof(Plugin));
             HarmonyInstance.PatchAll(typeof(FindMaskedPrefab));
             HarmonyInstance.PatchAll(typeof(MaskedSpawn));
         }
