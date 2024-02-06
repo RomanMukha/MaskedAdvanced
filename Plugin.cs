@@ -11,7 +11,7 @@ namespace MaskedAdvanced
     {
         private readonly Harmony HarmonyInstance = new(PluginInfo.Meta.Guid);
         internal static Plugin ThisInstance;
-        internal static ManualLogSource LogSource;
+        public static ManualLogSource LogSource;
         
         private ConfigEntry<int> SpawnRateConfig;
         public static int SpawnRate;
@@ -32,6 +32,7 @@ namespace MaskedAdvanced
             LogSource.LogInfo($"{PluginInfo.Meta.Name} mod is loading");
             
             HarmonyInstance.PatchAll(typeof(Plugin));
+            HarmonyInstance.PatchAll(typeof(MaskedAwakePatch));
             HarmonyInstance.PatchAll(typeof(FindMaskedPrefab));
             HarmonyInstance.PatchAll(typeof(MaskedSpawn));
         }
