@@ -35,13 +35,13 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="0Harmony">
-          <HintPath>..\..\lethal_company_game\BepInEx\core\0Harmony.dll</HintPath>
+          <HintPath>..\packages\BepInEx\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\Assembly-CSharp.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="BepInEx">
-          <HintPath>..\..\lethal_company_game\BepInEx\core\BepInEx.dll</HintPath>
+          <HintPath>..\packages\BepInEx\BepInEx.dll</HintPath>
         </Reference>
         <Reference Include="Microsoft.CSharp">
           <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.dll</HintPath>
@@ -52,22 +52,22 @@
         <Reference Include="System.Xml" />
         <Reference Include="System.Xml.Linq" />
         <Reference Include="Unity.TextMeshPro">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\Unity.TextMeshPro.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\UnityEngine.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\UnityEngine.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.PhysicsModule">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\UnityEngine.PhysicsModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UI">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\UnityEngine.UI.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\UnityEngine.UI.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UIModule">
-          <HintPath>..\..\lethal_company_game\Lethal Company_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+          <HintPath>..\packages\Unity.2022.3.9\UnityEngine.UIModule.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
