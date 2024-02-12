@@ -75,6 +75,8 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Patches\FindMaskedPrefab.cs" />
+        <Compile Include="Patches\FlashlightList.cs" />
+        <Compile Include="Patches\FlashlightListPatch.cs" />
         <Compile Include="Patches\MaskedAwakePatch.cs" />
         <Compile Include="Patches\MaskedBehaviour.cs" />
         <Compile Include="Patches\MaskedSpawn.cs" />

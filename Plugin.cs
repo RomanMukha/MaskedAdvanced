@@ -34,6 +34,7 @@ namespace MaskedAdvanced
             HarmonyInstance.PatchAll(typeof(Plugin));
             HarmonyInstance.PatchAll(typeof(MaskedAwakePatch));
             HarmonyInstance.PatchAll(typeof(FindMaskedPrefab));
+            HarmonyInstance.PatchAll(typeof(FlashlightListPatch));
             HarmonyInstance.PatchAll(typeof(MaskedSpawn));
         }
     }
